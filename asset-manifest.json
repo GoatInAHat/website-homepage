@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/goatinahat.dev/static/css/main.173cbcdf.css",
-    "main.js": "/goatinahat.dev/static/js/main.e4918314.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/goatinahat.dev/static/js/787.c4e7f8f9.chunk.js",
-    "index.html": "/goatinahat.dev/index.html",
-    "main.173cbcdf.css.map": "/goatinahat.dev/static/css/main.173cbcdf.css.map",
-    "main.e4918314.js.map": "/goatinahat.dev/static/js/main.e4918314.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/goatinahat.dev/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/static/css/main.173cbcdf.css",
+    "main.js": "/static/js/main.388e652b.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/index.html",
+    "main.173cbcdf.css.map": "/static/css/main.173cbcdf.css.map",
+    "main.388e652b.js.map": "/static/js/main.388e652b.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.173cbcdf.css",
-    "static/js/main.e4918314.js"
+    "static/js/main.388e652b.js"
   ]
 }
