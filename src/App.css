@@ -1,0 +1,18 @@
+html, body {
+  background-color: #1f1f1f;
+  height: 100%;
+  color: white;
+  font-family: 'Roboto Mono', sans-serif;
+  -webkit-font-smoothing:antialiased;
+
+}
+
+.profilepic {
+  box-shadow: 3px 4px 0px 0px #2563eb;
+}
+
+.main {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 50px 0px 0px 0px, rgba(0, 0, 0, 0.75) 0px 10px 60px -12px;
+  border-color: #2563eb;
+  border-radius: 20px;
+}
