@@ -55,8 +55,26 @@ class App extends React.Component {
               <div className='text-3xl tracking-wider font-mono'>
                 GoatInAHat
                 </div><div className="my-1"><div className="text-lg tracking-wide font-mono">[Bennett Vernon]</div></div>
-                <p className='my-3 text-base font-mono font-normal'>Hi! I'm a high school student, fullstack developer, and programmer for 3324Z. I'm interested in coding, mountain biking, robotics, and anything with an engine.</p>
+                <p className='my-3 text-base font-mono font-normal'>Hi! I'm a high school student, fullstack developer, and programmer for 3324Z. I'm interested in coding, mountain biking, and robotics.</p>
           </h1>
+
+
+          <div id="accordion-collapse" data-accordion="collapse">
+            <h2 id="accordion-collapse-heading-1">
+              <button type="button" className="flex justify-between items-center p-5 w-full font-medium text-left text-gray-900 bg-gray-100 rounded-t-xl border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                <span>What is Flowbite?</span>
+                <svg data-accordion-icon className="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
+              <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                <p>test</p>
+              </div>
+            </div>
+          </div>
+
+
+
           <h1 className='my-5 font-mono text-2xl tracking-wider'>Languages</h1>
           <SkillsBar skillname='Python' link='https://www.python.org/' icon='https://www.python.org/static/favicon.ico' percentage={100}></SkillsBar>
           <SkillsBar skillname='JavaScript' link='https://www.javascript.com/' icon='https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' percentage={95}></SkillsBar>
