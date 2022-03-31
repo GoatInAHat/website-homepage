@@ -1,5 +1,10 @@
 import './App.css';
 import React, { useState } from "react";
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-EYTW17TWRX');
+
+ReactGA.send("pageview");
 
 interface SkillsItemProps {
   skillname: string;
@@ -38,6 +43,28 @@ function SkillsBar(props: SkillsBarProps) {
   )
 }
 
+interface ProjectItemProps {
+  icon: string;
+  name: string;
+  description: string;
+  link: string;
+}
+
+function ProjectItem(props: ProjectItemProps) {
+  return (
+    <div className='flex-1 bg-opacity-30 p-4 my-2 rounded-md hover:scale-105 transform ease-in-out duration-300 bg-gray-500'>
+      <a href={props.link} target="_blank" rel="noopener noreferrer" className="font-mono">
+      <div className="flex flex-row items-center">
+      <img src={props.icon} className="w-12 h-12 object-contain"></img> 
+    <div className="ml-4 flex flex-col justify-center">
+      <h2 className="text-lg font-bold flex items-center">
+        {props.name}
+        </h2> <p className="text-sm">
+        {props.description}
+      </p></div></div></a></div>
+  )
+}
+
 class App extends React.Component {
   
   render () {
@@ -45,18 +72,25 @@ class App extends React.Component {
       <>
         <div className='my-4 mx-5'>
           <h1 className='header flex items-center'>
-            <img src='/profile.webp' className="profilepic w-10 h-10 rounded-lg inline avatar shadow"></img>
-            <span className="ml-4 font-mono text-xl tracking-wider">GoatInAHat</span>
+            <span className="ml-4 font-mono text-xl tracking-wider">@GoatInAHat</span>
           </h1>
         </div>
           <div className="main max-w-3xl px-8 mx-auto">
-            <div><img src="/profile.webp" className="profilepic w-32 h-32 rounded-3xl inline avatar my-5"></img></div>
             <h1 className="mt-4 text-3xl font-bold">
               <div className='text-3xl tracking-wider font-mono'>
-                GoatInAHat
-                </div><div className="my-1"><div className="text-lg tracking-wide font-mono">[Bennett Vernon]</div></div>
-                <p className='my-3 text-base font-mono font-normal'>Hi! I'm a high school student, fullstack developer, and programmer for 3324Z. I'm interested in coding, mountain biking, and robotics.</p>
+                <div className='h-7'></div>
+                <span className='text-3xl tracking-wider font-mono'>Hey, I'm Bennett.</span><div className="my-1">
+                </div></div>
+                <p className='my-3 text-base font-mono font-normal'>I'm a high school student, fullstack developer, and programmer for 3324Z. I'm interested in coding, mountain biking, and robotics.</p>
           </h1>
+
+          <div className='flex'>
+            <h1 className='my-5 font-mono text-2xl tracking-wider'>Featured Projects</h1>
+            <span className='font-mono mt-6 mx-3 text-sm'>[not all shown here]</span>
+          </div>
+          <ProjectItem icon='https://cdn-icons-png.flaticon.com/512/167/167743.png' name='AP Practice' description='A website with free practice MCQs for AP exams. Contains ~ 10,000 questions across 19 AP courses.' link='https://ap-practice.goatinahat.dev/'></ProjectItem>
+
+          
 
           <h1 className='my-5 font-mono text-2xl tracking-wider'>Languages</h1>
           <SkillsBar skillname='Python' link='https://www.python.org/' icon='https://www.python.org/static/favicon.ico' percentage={100}></SkillsBar>
@@ -67,7 +101,11 @@ class App extends React.Component {
           <SkillsBar skillname='Java' link='https://www.java.com/en/' icon='https://cdn.iconscout.com/icon/free/png-256/java-60-1174953.png' percentage={15}></SkillsBar>
           <SkillsBar skillname='C#' link='https://dotnet.microsoft.com/en-us/' icon='https://cdn.worldvectorlogo.com/logos/c--4.svg' percentage={10}></SkillsBar>
           
+
+          <h1 className='my-5 font-mono text-2xl tracking-wider'>Jobs & Internships</h1>
+          <ProjectItem icon='https://www.henson.com/wp-content/uploads/2021/05/JHC_Logo_Preferred_RGB.png' name='The Jim Henson Company' description='[summer 2021] Developing a user-friendly application that allowed puppeteers to adjust settings and parameters of animatronics control systems.' link=''></ProjectItem>
         
+
           <div className='flex flex-wrapmy-5 font-mono text-2xl tracking-wider'>Skills</div>
             <div className='flex flex-wrap my-5 font-mono text-xl tracking-wider justify-around'>
               <SkillsItem skillname='HTML5' link='https://html.com/html5/' icon='https://cdn.iconscout.com/icon/free/png-256/html5-40-1175193.png'></SkillsItem>
