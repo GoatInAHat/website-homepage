@@ -99,7 +99,7 @@ class App extends React.Component {
             <h1 className='my-5 font-mono text-2xl tracking-wider'>Featured Projects</h1>
           </div>
           <ProjectItem icon='https://ap-practice.goatinahat.dev/icon.png' name='AP Practice' description='A website with free practice MCQs for AP exams. Contains ~ 10,000 questions across 19 AP courses.' link='https://ap-practice.goatinahat.dev/'></ProjectItem>
-          <ProjectItem icon='/imgs/MFB.png' name='Meme Feed Bot' description='A Discord bot that constantly sends short videos in any Discord server. It currently has about 600,000 users across 11,000 Discord servers.'></ProjectItem>
+          <ProjectItem icon='/imgs/MFB.png' name='Meme Feed Bot' description='A Discord bot that constantly sends short videos in any Discord server. It currently has over 1m users across 20k Discord servers.'></ProjectItem>
           
 
           <h1 className='my-5 font-mono text-2xl tracking-wider'>Languages</h1>
