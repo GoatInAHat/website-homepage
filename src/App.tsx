@@ -106,6 +106,7 @@ class App extends React.Component {
           <SkillsBar skillname='Python' link='https://www.python.org/' icon='/imgs/python.png' percentage={100}></SkillsBar>
           <SkillsBar skillname='JavaScript' link='https://www.javascript.com/' icon='/imgs/javascript.png' percentage={95}></SkillsBar>
           <SkillsBar skillname='TypeScript' link='https://www.typescriptlang.org/' icon='/imgs/typescript.png' percentage={90}></SkillsBar>
+          <SkillsBar skillname='Rust' link='https://www.rust-lang.org/' icon='/imgs/rust.png' percentage={80}></SkillsBar>
           <SkillsBar skillname='C++' link='https://isocpp.org/' icon='/imgs/cpp.png' percentage={60}></SkillsBar>
           <SkillsBar skillname='GDScript' link='https://godotengine.org/' icon='/imgs/godot.png' percentage={40}></SkillsBar>
           <SkillsBar skillname='Java' link='https://www.java.com/en/' icon='/imgs/java.png' percentage={15}></SkillsBar>
@@ -114,7 +115,8 @@ class App extends React.Component {
 
           <h1 className='my-5 font-mono text-2xl tracking-wider'>Jobs & Internships</h1>
           <ProjectItem icon='/imgs/henson.png' name='The Jim Henson Company' description='[summer 2021] Developing a user-friendly application that allowed puppeteers to adjust settings and parameters of animatronics control systems.'></ProjectItem>
-        
+          <ProjectItem icon='/imgs/rollingrobots.png' name='Rolling Robots' description='[summer/fall 2023] Instructed elementary and middle school kids programming and robotics concepts and practices through hands-on instruction and learning such as programming Minecraft mods, building/designing kit and competition robots, and creating Roblox games.'></ProjectItem>
+          
 
           <div className='flex flex-wrapmy-5 font-mono text-2xl tracking-wider'>Skills</div>
             <div className='flex flex-wrap my-5 font-mono text-xl tracking-wider justify-around'>
